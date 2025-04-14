@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollos - Joaquim Gambín</title>
+    <style>
+        :root {
+            --primary-color: #2b5797;
+            --secondary-color: #1e3c6e;
+            --accent-color: #4a7ac2;
+            --light-color: #e6f0ff;
+            --dark-color: #0a1f3d;
+            --text-color: #333333;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        .profile-info {
+            text-align: right;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--light-color);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--light-color);
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .development-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--light-color);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .development-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .development-item .period {
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .development-item p {
+            margin-bottom: 10px;
+        }
+        
+        .recent-project {
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="CET Logo" class="logo">
+                <div class="profile-info">
+                    <h1>Joaquim Gambín</h1>
+                    <h2>Consultor Estratégico y Tecnológico</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="desarrollos.html">Desarrollos</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            <h2 class="section-title">Proyectos y Desarrollos</h2>
+            
+            <div class="development-item recent-project">
+                <h3>Liderazgo en el proyecto de IA con IBM Watson para control de personal</h3>
+                <span class="period">2023</span>
+                <p>Implementación de soluciones de inteligencia artificial utilizando IBM Watson para optimizar el control y gestión de personal. El proyecto permitió automatizar procesos de planificación, seguimiento y análisis de rendimiento, mejorando significativamente la eficiencia operativa.</p>
+            </div>
+            
+            <div class="development-item">
+                <h3>Definición de flujos administrativos y automatización de procesos</h3>
+                <p>Análisis, diseño e implementación de flujos de trabajo administrativos optimizados. Automatización de procesos repetitivos para mejorar la eficiencia y reducir errores, permitiendo al personal centrarse en tareas de mayor valor añadido.</p>
+            </div>
+            
+            <div class="development-item">
+                <h3>Desarrollo de diversas herramientas de control administrativo y financiero</h3>
+                <p>Creación de soluciones personalizadas para:
+                    <ul>
+                        <li>Cash Flow semanal</li>
+                        <li>Presupuestos</li>
+                        <li>Contabilización masiva</li>
+                        <li>Automatización de bancos</li>
+                    </ul>
+                </p>
+                <p>Estas herramientas han permitido mejorar el control financiero, optimizar la gestión de tesorería y agilizar los procesos contables.</p>
+            </div>
+            
+            <div class="development-item">
+                <h3>Implantación de BI – Power BI</h3>
+                <span class="period">2016</span>
+                <p>Implementación de soluciones de Business Intelligence utilizando Microsoft Power BI para el análisis de datos empresariales. Desarrollo de dashboards interactivos y reportes automatizados para facilitar la toma de decisiones basada en datos.</p>
+            </div>
+            
+            <div class="development-item">
+                <h3>Ideólogo de analítica y desarrollo de BI para hoteles con herramientas Excel</h3>
+                <span class="period">2011</span>
+                <p>Diseño y desarrollo de soluciones de Business Intelligence específicas para el sector hotelero utilizando Microsoft Excel. Creación de modelos analíticos para el seguimiento de KPIs, análisis de rentabilidad y optimización de recursos.</p>
+            </div>
+            
+            <div class="development-item">
+                <h3>Jefe de Proyecto para el desarrollo del PMS CentaurHo para hoteles</h3>
+                <span class="period">2008-2009</span>
+                <p>Liderazgo en el desarrollo e implementación del sistema de gestión hotelera CentaurHo. Coordinación del equipo de desarrollo, definición de requisitos y supervisión de la implementación en diferentes establecimientos hoteleros.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Joaquim Gambín | joaquim.gambin@gmail.com | 649408174</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación - Joaquim Gambín</title>
+    <style>
+        :root {
+            --primary-color: #2b5797;
+            --secondary-color: #1e3c6e;
+            --accent-color: #4a7ac2;
+            --light-color: #e6f0ff;
+            --dark-color: #0a1f3d;
+            --text-color: #333333;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        .profile-info {
+            text-align: right;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--light-color);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--light-color);
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .education-category {
+            margin-bottom: 30px;
+        }
+        
+        .category-title {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--light-color);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .education-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        
+        .education-item .institution {
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        
+        .education-item .year {
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .education-item p {
+            margin-bottom: 5px;
+        }
+        
+        .current-course {
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .languages {
+            margin-top: 40px;
+        }
+        
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .language-name {
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="CET Logo" class="logo">
+                <div class="profile-info">
+                    <h1>Joaquim Gambín</h1>
+                    <h2>Consultor Estratégico y Tecnológico</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="desarrollos.html">Desarrollos</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            <h2 class="section-title">Formación Académica y Capacitaciones</h2>
+            
+            <div class="education-category">
+                <h3 class="category-title">Inteligencia Artificial y Tecnología</h3>
+                
+                <div class="education-item current-course">
+                    <h3>Programa de Especialización "IA empresarial"</h3>
+                    <span class="institution">Esade</span>
+                    <span class="year">Actualmente cursando</span>
+                    <p>Especialización en aplicación de inteligencia artificial en entornos empresariales, estrategias de implementación y casos de uso prácticos.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Prompt Engineering</h3>
+                    <span class="institution">Imagina</span>
+                    <span class="year">2023</span>
+                    <p>Formación especializada en técnicas avanzadas de prompt engineering para optimizar el uso de modelos de lenguaje y sistemas de IA generativa.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Robotización y automatización RPA – Power Automate</h3>
+                    <span class="institution">Imagina</span>
+                    <span class="year">2023</span>
+                    <p>Capacitación en automatización de procesos robóticos utilizando Microsoft Power Automate para optimizar flujos de trabajo empresariales.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Programa "La IA en los Negocios"</h3>
+                    <span class="institution">Esade</span>
+                    <span class="year">2023</span>
+                    <p>Formación en aplicaciones prácticas de la inteligencia artificial en el entorno empresarial, estrategias de implementación y casos de éxito.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Postgrado "Business Intelligence y Gestión del Conocimiento"</h3>
+                    <span class="institution">Universidad de Alcalá</span>
+                    <span class="year">2010</span>
+                    <p>Especialización en sistemas de Business Intelligence, análisis de datos y gestión del conocimiento para la toma de decisiones empresariales.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>"Excel para programadores"</h3>
+                    <span class="year">2008</span>
+                    <p>Formación avanzada en Microsoft Excel orientada al desarrollo de soluciones y automatización mediante VBA y macros.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>"Programación – Organigramas y Pseudocódigo"</h3>
+                    <span class="year">2002</span>
+                    <p>Formación en fundamentos de programación, diseño de algoritmos y estructuras de datos.</p>
+                </div>
+            </div>
+            
+            <div class="education-category">
+                <h3 class="category-title">Administración y Finanzas</h3>
+                
+                <div class="education-item">
+                    <h3>Asesor Fiscal y Derecho Empresarial</h3>
+                    <span class="institution">Instituto de Empresa</span>
+                    <span class="year">2005</span>
+                    <p>Formación especializada en asesoría fiscal, normativa tributaria y aspectos legales de la gestión empresarial.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Dirección Financiera</h3>
+                    <span class="institution">Eada</span>
+                    <span class="year">2000</span>
+                    <p>Programa de formación en gestión financiera, análisis de inversiones, planificación financiera y control de gestión.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Control de Gestión</h3>
+                    <span class="institution">Eada</span>
+                    <span class="year">1995</span>
+                    <p>Formación en sistemas de control de gestión, cuadros de mando, indicadores de rendimiento y análisis de desviaciones.</p>
+                </div>
+            </div>
+            
+            <div class="languages">
+                <h3 class="category-title">Idiomas</h3>
+                
+                <div class="language-item">
+                    <span class="language-name">Catalán</span>
+                    <span class="language-level">Nativo</span>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">Castellano</span>
+                    <span class="language-level">Nativo</span>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">Inglés</span>
+                    <span class="language-level">Nivel Medio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Joaquim Gambín | joaquim.gambin@gmail.com | 649408174</p>
+        </div>
+    </footer>
+</body>
+</html>

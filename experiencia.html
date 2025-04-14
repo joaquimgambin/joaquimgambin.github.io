@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia Profesional - Joaquim Gambín</title>
+    <style>
+        :root {
+            --primary-color: #2b5797;
+            --secondary-color: #1e3c6e;
+            --accent-color: #4a7ac2;
+            --light-color: #e6f0ff;
+            --dark-color: #0a1f3d;
+            --text-color: #333333;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        .profile-info {
+            text-align: right;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--light-color);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--light-color);
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--light-color);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .experience-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .experience-item .position {
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        
+        .experience-item .period {
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .experience-item p {
+            margin-bottom: 10px;
+        }
+        
+        .current-position {
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="CET Logo" class="logo">
+                <div class="profile-info">
+                    <h1>Joaquim Gambín</h1>
+                    <h2>Consultor Estratégico y Tecnológico</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="desarrollos.html">Desarrollos</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            
+            <div class="experience-item current-position">
+                <h3>Evergreen (H.Top Hotels)</h3>
+                <span class="position">Adjunto a Presidencia</span>
+                <span class="period">Actualmente</span>
+                <p>Asesoramiento estratégico a la dirección en áreas de gestión empresarial, financiera y tecnológica. Coordinación de proyectos de transformación digital y optimización de procesos.</p>
+            </div>
+            
+            <div class="experience-item current-position">
+                <h3>Grup Creu Groga</h3>
+                <span class="position">Consultor Estratégico</span>
+                <span class="period">Actualmente</span>
+                <p>Consultoría en estrategia empresarial, optimización de procesos y transformación digital. Implementación de soluciones tecnológicas para mejorar la eficiencia operativa.</p>
+            </div>
+            
+            <div class="experience-item current-position">
+                <h3>Grupo Mercury</h3>
+                <span class="position">Consultor Estratégico</span>
+                <span class="period">Actualmente</span>
+                <p>Asesoramiento en estrategia empresarial y tecnológica. Desarrollo e implementación de soluciones para la optimización de procesos y mejora de la rentabilidad.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Greece Airways & Air Scotland</h3>
+                <span class="position">Director Financiero</span>
+                <p>Responsable de la gestión financiera, control presupuestario, análisis de costes y optimización de recursos. Implementación de sistemas de control financiero y reporting.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Ajuntament de Calella</h3>
+                <span class="position">Gerente del Patronato de Turismo</span>
+                <p>Gestión y promoción turística del municipio. Desarrollo de estrategias para potenciar el turismo local y mejorar la oferta de servicios.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Industrial Garbí</h3>
+                <span class="position">Contabilidad</span>
+                <p>Gestión contable, elaboración de informes financieros y control presupuestario. Implementación de sistemas para la optimización de procesos administrativos.</p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Playasol Hotels</h3>
+                <span class="position">Sistemas y contabilidad</span>
+                <p>Responsable de sistemas informáticos y contabilidad. Implementación de soluciones tecnológicas para la mejora de procesos administrativos y financieros.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Joaquim Gambín | joaquim.gambin@gmail.com | 649408174</p>
+        </div>
+    </footer>
+</body>
+</html>

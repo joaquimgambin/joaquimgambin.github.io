@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquim Gambín - Consultor Estratégico y Tecnológico</title>
+    <style>
+        :root {
+            --primary-color: #2b5797;
+            --secondary-color: #1e3c6e;
+            --accent-color: #4a7ac2;
+            --light-color: #e6f0ff;
+            --dark-color: #0a1f3d;
+            --text-color: #333333;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+        
+        .profile-info {
+            text-align: right;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: var(--light-color);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--light-color);
+        }
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .profile-summary {
+            background-color: var(--light-color);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .experience-item, .development-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .experience-item h3, .development-item h3, .education-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        
+        .experience-item p, .development-item p, .education-item p {
+            margin-bottom: 5px;
+        }
+        
+        .specialization-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .specialization-column {
+            flex: 1;
+            min-width: 250px;
+            background-color: var(--light-color);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .specialization-column h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .specialization-column ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+        
+        .specialization-column li {
+            margin-bottom: 5px;
+        }
+        
+        .contact-form {
+            background-color: var(--light-color);
+            padding: 25px;
+            border-radius: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .specialization-areas {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="CET Logo" class="logo">
+                <div class="profile-info">
+                    <h1>Joaquim Gambín</h1>
+                    <h2>Consultor Estratégico y Tecnológico</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="desarrollos.html">Desarrollos</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="profile-image-container">
+                <img src="profile_image.png" alt="Joaquim Gambín presentando soluciones de IA" class="profile-image">
+            </div>
+            
+            <div class="profile-summary">
+                <p>Más de 25 años en el sector turístico, partiendo de trabajos operativos y evolucionando hacia la dirección y administración de empresas, con un alto conocimiento técnico.</p>
+                <p>La experiencia en parametrizar y automatizar procedimientos administrativos, de control de costes e ingresos, en operaciones, en gerencia, fiscales, aplicando inteligencia computacional y pensando en optimizar y mejorar sistemas de costes, al mismo tiempo que aumentando la calidad en servicio, me ha conducido a liderar proyectos empresariales y tecnológicos con un gran éxito.</p>
+                <p>Dado el presente contexto de transformaciones tecnológicas y evolución empresarial, me he capacitado en IA y en herramientas de automatización y optimización de procesos.</p>
+                <p>Coordino equipos de trabajo con un objetivo concreto, delimitado y acotado, tanto en el tiempo de ejecución como en los recursos empleados.</p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Áreas de Especialización</h2>
+                <div class="specialization-areas">
+                    <div class="specialization-column">
+                        <h3>Como Adjunto a la Propiedad</h3>
+                        <ul>
+                            <li>Estrategia Empresarial</li>
+                            <li>Legal y Fiscal</li>
+                            <li>Operaciones Estratégicas</li>
+                            <li>Gestión de la Propiedad</li>
+                        </ul>
+                    </div>
+                    <div class="specialization-column">
+                        <h3>Como Director Financiero</h3>
+                        <ul>
+                            <li>Estrategia Financiera</li>
+                            <li>Gestión del CIRBE</li>
+                            <li>Control de Gestión y Financiero</li>
+                            <li>Análisis de Balances</li>
+                        </ul>
+                    </div>
+                    <div class="specialization-column">
+                        <h3>Como Responsable TIC</h3>
+                        <ul>
+                            <li>Proyectos TIC</li>
+                            <li>Sistemas</li>
+                            <li>Robotización y optimización</li>
+                            <li>Análisis de procedimientos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Joaquim Gambín | joaquim.gambin@gmail.com | 649408174</p>
+        </div>
+    </footer>
+</body>
+</html>
